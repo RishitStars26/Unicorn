@@ -5,6 +5,7 @@ const Bodies = Matter.Bodies;
 var engine, world;
 var box1, pig1;
 var backgroundImg,platform;
+var mesg;
 
 function preload() {
     backgroundImg = loadImage("sprites/bg.png");
@@ -14,6 +15,9 @@ function setup(){
     var canvas = createCanvas(1200,400);
     engine = Engine.create();
     world = engine.world;
+
+    mesg = "hello";
+    console.log(mesg);
 
 
     ground = new Ground(600,height,1200,20);
